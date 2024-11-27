@@ -7,60 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="encabezado ">
+    <header class="encabezado row">
         <div class="row"> 
             <h1>libroteca</h1>
             <img class="img-encabezado" src="img/logo.png" alt="">
         </div>
        <div>
-            <button class="boton1"><a href="" onclick="contact()" class="enlace">Inicio de Sesión</a></button>
+            <button onclick="contact()" class="boton1 enlace">Inicio de Sesión</button>
             <button class="boton2">Registro</button>
        </div>
     </header>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="nav">
         <nav class="barra row">
-            <div class="lop"> 
+            <div class="alineacion" > 
                 <img src="img/libro.png" alt="">
                 <a href="">Elije tu libro</a>
             </div>
-            <div class="pip"> 
+
+            <div class="alineacion"> 
                 <img src="img/check.png" alt="">
                  <a href="">Revisa disponibilidad</a>
             </div>
-            <div class="">
+
+            <div class="alineacion">
                 <img src="img/separalo.png" alt="">
                 <a href="">Sepáralo</a>
             </div>
-            <div>
+
+            <div class="alineacion">
                 <img src="img/shipping.png" alt="">
                 <a href="">Recíbelo</a>
             </div>
@@ -79,37 +54,40 @@
         <a href="#home" class="enlace">Poesía</a>
     
     </section> 
+
     <main class="store">
-        <h1 class="subtitulo">Todos los Libros</h1>
+        <h1 id="todos" class="subtitulo">Todos los Libros</h1>
     </main>
 
-    <section class=" coming row">
-        <article class="col-1">
+<section class=" coming row">
+
+        <article class="col-1 fin">
             <img src="img/cien.jpg" class="ososrosas" alt="coming soon">
+            <h3 class="osos">Cien Años de Soledad</h3>
+            <h3>Gabriel Garcia Márquez</h3>
+            <button onclick="cambiarcolorboton(this)" class="boton">Rentar</button>
         </article>
-        <article class="col-1">
+
+        <article class="col-1 fin">
             <img src="img/rayuela.jpg" class="ososrosas" alt="coming soon">
+            <h3>Rayuela</h3>
+            <h3>Julio Cortázar</h3>
+            <button onclick="cambiarcolorboton(this)" class="boton">Rentar</button>
         </article>
-        <article class="col-1">
+
+        <article class="col-1 fin">
             <img src="img/travesuras.jpg" class="ososrosas" alt="coming soon">
+            <h3 class="osos" style="margin-left: 50px;">Travesuras de la Niña Mala</h3>
+            <h3>Mario Vargas Llosa</h3>
+            <button onclick="cambiarcolorboton(this)" class="boton">Rentar</button>
         </article>
        
     </section>
-    <article class=" ositos row">
-        <h2 class="osos">Mischief Mouse</h2>
-        <h2 class="osos" style="margin-left: 50px;">Shy Shrew</h2>
-        <h2 class="osos" style="margin-left: 50px;" >Hangry Hamster</h2>
-    </article>
 
-        <section>
-
-            <article class="botones row">
-                <button onclick="comprar()" class="boton">Rentar</button>
-                <button onclick="comprar()" class="boton">Rentar</button>
-                <button onclick="comprar()" class="boton">Rentar</button>
-
-            </article>
-        </section>
+        <footer class="partefinal"> 
+            <h2>Todos los derechos reservados.Libroteca</h2>
+        </footer>
+       
     <script src="js.js"></script>
 </body>
 </html>
